@@ -13,7 +13,16 @@ export default function Navi() {
                         navbarScroll
                     >
                         <Nav.Link >Ana Sayfa</Nav.Link>
-                        <Nav.Link >Hakkımızda</Nav.Link>
+                        <NavDropdown title="Hakkımızda" id="nav-dropdown">
+                            <NavDropdown.Item >Yönetim</NavDropdown.Item>
+                            <NavDropdown.Item>Misyon vizyon</NavDropdown.Item>
+                            <NavDropdown.Item >İdari birimler</NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown title="Akademik" id="nav-dropdown">
+                            <NavDropdown.Item >Dersler</NavDropdown.Item>
+                            <NavDropdown.Item>Another action</NavDropdown.Item>
+                            <NavDropdown.Item >Something else here</NavDropdown.Item>
+                        </NavDropdown>
                         <NavDropdown title="Öğrenci" id="nav-dropdown">
                             <NavDropdown.Item >Dersler</NavDropdown.Item>
                             <NavDropdown.Item>Another action</NavDropdown.Item>
