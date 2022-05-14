@@ -13,6 +13,9 @@ import Sariyer from '../pages/Yerleskeler/Sariyer'
 import Muhendislik from '../pages/Fakulteler/Muhendislik'
 import Tip from '../pages/Fakulteler/Tip'
 import GuzelSanatlar from '../pages/Fakulteler/GuzelSanatlar'
+import Veterinerlik from '../pages/Fakulteler/Veterinerlik'
+import Orman from '../pages/Fakulteler/Orman'
+import SporBilimleri from '../pages/Fakulteler/SporBilimleri'
 export default function Dasboard () {
   return (
     <div>
@@ -30,6 +33,9 @@ export default function Dasboard () {
         <Route path='/Fakulteler/Muhendislik' element={<Muhendislik/>} exact/>
         <Route path='/Fakulteler/Tip' element={<Tip/>} exact/>
         <Route path='/Fakulteler/GuzelSanatlar' element={<GuzelSanatlar/>} exact/>
+        <Route path='/Fakulteler/Veterinerlik' element={<Veterinerlik/>} exact/>
+        <Route path='/Fakulteler/Orman' element={<Orman/>} exact/>
+        <Route path='/Fakulteler/SporBilimleri' element={<SporBilimleri/>} exact/>
       </Routes>
     </div>
   )
