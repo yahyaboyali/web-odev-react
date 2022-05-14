@@ -6,7 +6,7 @@ export default function Slyde() {
     <Carousel>
 <Carousel.Item interval={1000}>
   <img
-    className="d-block w-100"
+    className="resim"
     src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=First slide&bg=282c34"
     alt="First slide"
   />
@@ -28,7 +28,7 @@ export default function Slyde() {
 </Carousel.Item>
 <Carousel.Item>
   <img
-    className="d-block w-100"
+    className="resim"
     src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=Third slide&bg=282c34"
     alt="Third slide"
   />
