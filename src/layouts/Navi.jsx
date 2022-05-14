@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav, Navbar, Container, Button,NavDropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 export default function Navi() {
     return (
         <Navbar bg="dark" variant='dark' expand="sm">
@@ -12,9 +13,9 @@ export default function Navi() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link >Ana Sayfa</Nav.Link>
+                        <Nav.Link as={Link} to="/">Ana Sayfa</Nav.Link>
                         <NavDropdown title="Hakkımızda" id="nav-dropdown">
-                            <NavDropdown.Item >Yönetim</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/Yonetim">Yönetim</NavDropdown.Item>
                             <NavDropdown.Item>Misyon vizyon</NavDropdown.Item>
                             <NavDropdown.Item >İdari birimler</NavDropdown.Item>
                         </NavDropdown>
