@@ -21,11 +21,11 @@ export default function Yerleskeler() {
                             </tr>
                             <tr>
                                 <td><Nav.Link as={Link} to="/Yerleskeler/Kadikoy">Kadıköy</Nav.Link></td>
-                                <td>Konum bilgisi</td>
+                                <td><a href='https://goo.gl/maps/AftEatw3W66jnCaUA'  target="_blank" rel="noreferrer">konum</a></td>
                             </tr>
                             <tr>
                                 <td><Nav.Link as={Link} to="/Yerleskeler/Sariyer">Sarıyer</Nav.Link></td>
-                                <td>Konum bilgisi</td>
+                                <td><a href='https://goo.gl/maps/AftEatw3W66jnCaUA'  target="_blank" rel="noreferrer">konum</a></td>
                             </tr>
                         </tbody>
                     </Table>
