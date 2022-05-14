@@ -6,6 +6,7 @@ import Bolumler from '../pages/Bolumler'
 import Fakulteler from '../pages/Fakulteler'
 import Misyon from '../pages/Misyon'
 import Kantin from '../pages/Kantin'
+import Yerleskeler from '../pages/Yerleskeler'
 export default function Dasboard () {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function Dasboard () {
         <Route path='/Fakulteler' element={<Fakulteler/>} exact/>
         <Route path='/Misyon' element={<Misyon/>} exact/>
         <Route path='/Kantin' element={<Kantin/>} exact/>
+        <Route path='/Yerleskeler' element={<Yerleskeler/>} exact/>
       </Routes>
     </div>
   )

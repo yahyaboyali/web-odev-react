@@ -35,7 +35,7 @@ export default function Navi() {
                             <NavDropdown.Item >Something else here</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link>Haberler</Nav.Link>
-                        <Nav.Link>Yerleşkeler</Nav.Link>
+                        <Nav.Link as={Link} to="/Yerleskeler">Yerleşkeler</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
