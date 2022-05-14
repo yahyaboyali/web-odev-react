@@ -7,7 +7,7 @@ export default function Yonetim() {
         <img
     className="resim"
     src="img/senlik.PNG"
-    alt="Second slide"
+    alt="naber"
   />
     </div>
   )

@@ -18,7 +18,7 @@ export default function Slyde() {
 <Carousel.Item interval={500}>
   <img
     className="resim"
-    src="/img/senlik.png?f=Lxq3TCXBNEKy170eHvxhFg?text=Second slide&bg=282c34"
+    src="img/senlik.png?f=Lxq3TCXBNEKy170eHvxhFg?text=Second slide&bg=282c34"
     alt="Second slide"
   />
   <Carousel.Caption>
