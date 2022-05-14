@@ -16,7 +16,7 @@ export default function Navi() {
                         <Nav.Link as={Link} to="/">Ana Sayfa</Nav.Link>
                         <NavDropdown title="Hakkımızda" id="nav-dropdown">
                             <NavDropdown.Item as={Link} to="/Yonetim">Yönetim</NavDropdown.Item>
-                            <NavDropdown.Item>Misyon vizyon</NavDropdown.Item>
+                            <NavDropdown.Item  as={Link} to="/Misyon">Misyon vizyon</NavDropdown.Item>
                             <NavDropdown.Item >İdari birimler</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Akademik" id="nav-dropdown">
