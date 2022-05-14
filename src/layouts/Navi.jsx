@@ -5,7 +5,7 @@ export default function Navi() {
     return (
         <Navbar bg="dark" variant='dark' expand="sm">
             <Container fluid="md">
-                <Navbar.Brand>Agalar University</Navbar.Brand>
+                <Navbar.Brand><Nav.Link as={Link} to="/">Agalar University</Nav.Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -18,6 +18,7 @@ export default function Navi() {
                             <NavDropdown.Item as={Link} to="/Yonetim">Yönetim</NavDropdown.Item>
                             <NavDropdown.Item  as={Link} to="/Misyon">Misyon vizyon</NavDropdown.Item>
                             <NavDropdown.Item >İdari birimler</NavDropdown.Item>
+                            <NavDropdown.Item  as={Link} to="/Misyon">agalar vizyon</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Akademik" id="nav-dropdown">
                             <NavDropdown.Item >Dersler</NavDropdown.Item>
