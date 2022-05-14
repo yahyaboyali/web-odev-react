@@ -7,7 +7,7 @@ export default function Slyde() {
 <Carousel.Item interval={1000}>
   <img
     className="d-block w-100"
-    src="holder.js/800x400?text=First slide&bg=373940"
+    src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=First slide&bg=282c34"
     alt="First slide"
   />
   <Carousel.Caption>
@@ -18,7 +18,7 @@ export default function Slyde() {
 <Carousel.Item interval={500}>
   <img
     className="resim"
-    src="img/senlik.png?f=Lxq3TCXBNEKy170eHvxhFg?text=Second slide&bg=282c34"
+    src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=Second slide&bg=282c34"
     alt="Second slide"
   />
   <Carousel.Caption>
@@ -29,7 +29,7 @@ export default function Slyde() {
 <Carousel.Item>
   <img
     className="d-block w-100"
-    src="holder.js/800x400?text=Third slide&bg=20232a"
+    src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=Third slide&bg=282c34"
     alt="Third slide"
   />
   <Carousel.Caption>
