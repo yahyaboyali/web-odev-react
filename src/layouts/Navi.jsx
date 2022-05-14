@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, Container, Button,NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar, Container,NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 export default function Navi() {
     return (
@@ -26,7 +26,7 @@ export default function Navi() {
                         </NavDropdown>
                         <NavDropdown title="Öğrenci" id="nav-dropdown">
                             <NavDropdown.Item >Dersler</NavDropdown.Item>
-                            <NavDropdown.Item>Another action</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/Kantin">Kantin</NavDropdown.Item>
                             <NavDropdown.Item >Something else here</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Akademik" id="nav-dropdown">
@@ -37,7 +37,6 @@ export default function Navi() {
                         <Nav.Link>Haberler</Nav.Link>
                         <Nav.Link>Yerleşkeler</Nav.Link>
                     </Nav>
-                    <Button variant="primary">Sign Up</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
