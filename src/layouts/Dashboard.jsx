@@ -1,12 +1,16 @@
 import React from 'react'
-import MainPage from '../pages/MainPage'
 import { Routes,Route } from 'react-router-dom'
+
+import MainPage from '../pages/MainPage'
 import Yonetim from '../pages/Yonetim'
 import Bolumler from '../pages/Bolumler'
 import Fakulteler from '../pages/Fakulteler'
 import Misyon from '../pages/Misyon'
+import IdariBirimler from '../pages/IdariBirimler'
 import Kantin from '../pages/Kantin'
 import Yerleskeler from '../pages/Yerleskeler'
+import Takvim from '../pages/Takvim'
+
 import Besiktas from '../pages/Yerleskeler/Besiktas'
 import Kadikoy from '../pages/Yerleskeler/Kadikoy'
 import Sariyer from '../pages/Yerleskeler/Sariyer'
@@ -35,8 +39,11 @@ export default function Dasboard () {
         <Route path='/Bolumler' element={<Bolumler/>} exact/>
         <Route path='/Fakulteler' element={<Fakulteler/>} exact/>
         <Route path='/Misyon' element={<Misyon/>} exact/>
+        <Route path='/IdariBirimler' element={<IdariBirimler/>} exact/>
         <Route path='/Kantin' element={<Kantin/>} exact/>
         <Route path='/Yerleskeler' element={<Yerleskeler/>} exact/>
+        <Route path='/Takvim' element={<Takvim/>} exact/>
+
         <Route path='/Yerleskeler/Besiktas' element={<Besiktas/>} exact/>
         <Route path='/Yerleskeler/Kadikoy' element={<Kadikoy/>} exact/>
         <Route path='/Yerleskeler/Sariyer' element={<Sariyer/>} exact/>

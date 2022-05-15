@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, Container,NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 export default function Navi() {
     return (
@@ -16,26 +16,15 @@ export default function Navi() {
                         <Nav.Link as={Link} to="/">Ana Sayfa</Nav.Link>
                         <NavDropdown title="Hakkımızda" id="nav-dropdown">
                             <NavDropdown.Item as={Link} to="/Yonetim">Yönetim</NavDropdown.Item>
-                            <NavDropdown.Item  as={Link} to="/Misyon">Misyon vizyon</NavDropdown.Item>
-                            <NavDropdown.Item >İdari birimler</NavDropdown.Item>
-                            <NavDropdown.Item  as={Link} to="/Misyon">agalar vizyon</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/Misyon">Misyon&Vizyon</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/IdariBirimler">İdari Birimler</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Akademik" id="nav-dropdown">
-                            <NavDropdown.Item >Dersler</NavDropdown.Item>
-                            <NavDropdown.Item>Another action</NavDropdown.Item>
-                            <NavDropdown.Item >Something else here</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/Takvim">Takvim</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Öğrenci" id="nav-dropdown">
-                            <NavDropdown.Item >Dersler</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/Kantin">Kantin</NavDropdown.Item>
-                            <NavDropdown.Item >Something else here</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Akademik" id="nav-dropdown">
-                            <NavDropdown.Item >Dersler</NavDropdown.Item>
-                            <NavDropdown.Item>Another action</NavDropdown.Item>
-                            <NavDropdown.Item >Something else here</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link>Haberler</Nav.Link>
                         <Nav.Link as={Link} to="/Yerleskeler">Yerleşkeler</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
