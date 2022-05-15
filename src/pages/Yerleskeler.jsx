@@ -15,9 +15,8 @@ export default function Yerleskeler() {
                         </thead>
                         <tbody>
                             <tr>
-                                <td> <Nav.Link as={Link} to="/Yerleskeler/Besiktas">Beşiktaş</Nav.Link>
-                                    </td>
-                                <td>Konum bilgisi</td>
+                                <td><Nav.Link as={Link} to="/Yerleskeler/Besiktas">Beşiktaş</Nav.Link></td>
+                                <td><a href='https://goo.gl/maps/rvJzyV97DJ6UVxRW6'  target="_blank" rel="noreferrer">konum</a></td>
                             </tr>
                             <tr>
                                 <td><Nav.Link as={Link} to="/Yerleskeler/Kadikoy">Kadıköy</Nav.Link></td>
@@ -25,7 +24,7 @@ export default function Yerleskeler() {
                             </tr>
                             <tr>
                                 <td><Nav.Link as={Link} to="/Yerleskeler/Sariyer">Sarıyer</Nav.Link></td>
-                                <td><a href='https://goo.gl/maps/AftEatw3W66jnCaUA'  target="_blank" rel="noreferrer">konum</a></td>
+                                <td><a href='https://goo.gl/maps/CnZbMueB6CRaEy8c8'  target="_blank" rel="noreferrer">konum</a></td>
                             </tr>
                         </tbody>
                     </Table>
