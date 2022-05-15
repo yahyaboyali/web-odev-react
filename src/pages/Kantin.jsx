@@ -7,7 +7,9 @@ export default function Kantin() {
             <Row>
                 <Col>
                     <Card>
-                        <Card.Body>Fiyat listesi</Card.Body>
+                        <Card.Body>
+                            <h3>Fiyat Listesi</h3>
+                        </Card.Body>
                     </Card>
                 </Col>
             </Row>
@@ -17,7 +19,7 @@ export default function Kantin() {
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>ürün</th>
+                                <th>Ürün</th>
                                 <th>Açıklama </th>
                                 <th>Fiyat</th>
                             </tr>
