@@ -23,13 +23,8 @@ export default function Navi() {
                             <NavDropdown.Item as={Link} to="/Takvim">Takvim</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Öğrenci" id="nav-dropdown">
-                            <NavDropdown.Item >Dersler</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/Kantin">Kantin</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Akademik" id="nav-dropdown">
-                            <NavDropdown.Item >Dersler</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link>Haberler</Nav.Link>
                         <Nav.Link as={Link} to="/Yerleskeler">Yerleşkeler</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

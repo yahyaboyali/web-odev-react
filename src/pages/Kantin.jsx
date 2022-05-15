@@ -30,13 +30,13 @@ export default function Kantin() {
                                 <td>1 TL</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td>2</td>
                                 <td>çay verir misin?</td>
                                 <td>200 ml çay</td>
                                 <td>0.75 TL</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td>3</td>
                                 <td>Halil bey müsaitseniz çay rica edebilir miyim? </td>
                                 <td>200 ml çay</td>
                                 <td>0.25 TL</td>
