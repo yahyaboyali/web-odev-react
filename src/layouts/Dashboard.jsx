@@ -12,10 +12,8 @@ import Kadikoy from '../pages/Yerleskeler/Kadikoy'
 import Sariyer from '../pages/Yerleskeler/Sariyer'
 import Muhendislik from '../pages/Fakulteler/Muhendislik'
 import Tip from '../pages/Fakulteler/Tip'
-import GuzelSanatlar from '../pages/Fakulteler/GuzelSanatlar'
 import Veterinerlik from '../pages/Fakulteler/Veterinerlik'
 import Orman from '../pages/Fakulteler/Orman'
-import SporBilimleri from '../pages/Fakulteler/SporBilimleri'
 import SosyalBilimler from '../pages/Fakulteler/SosyalBilimler'
 import BilgisayarMuhendisligi from '../pages/Bolumler/Fakulteler/Muhendislik/BilgisayarMuhendisligi'
 import EndustriMuhendisligi from '../pages/Bolumler/Fakulteler/Muhendislik/EndustriMuhendisligi'
@@ -27,7 +25,7 @@ import OrmanMuhendisligi from '../pages/Bolumler/Orman/OrmanMuhendisligi'
 import OrmanEndustriMuhendisligi from '../pages/Bolumler/Orman/OrmanEndustriMuhendisligi'
 import PeyzajMimarligi from '../pages/Bolumler/Orman/PeyzajMimarligi'
 import Psikoloji from '../pages/Bolumler/Fakulteler/SosyalBilimler/Psikoloji'
-
+import SporBilimler from '../pages/Fakulteler/SporBilimler'
 export default function Dasboard () {
   return (
     <div>
@@ -44,10 +42,9 @@ export default function Dasboard () {
         <Route path='/Yerleskeler/Sariyer' element={<Sariyer/>} exact/>
         <Route path='/Fakulteler/Muhendislik' element={<Muhendislik/>} exact/>
         <Route path='/Fakulteler/Tip' element={<Tip/>} exact/>
-        <Route path='/Fakulteler/GuzelSanatlar' element={<GuzelSanatlar/>} exact/>
+        <Route path='/Fakulteler/SporBilimler' element={<SporBilimler/>} exact/>
         <Route path='/Fakulteler/Veterinerlik' element={<Veterinerlik/>} exact/>
         <Route path='/Fakulteler/Orman' element={<Orman/>} exact/>
-        <Route path='/Fakulteler/SporBilimleri' element={<SporBilimleri/>} exact/>
         <Route path='/Fakulteler/SosyalBilimler' element={<SosyalBilimler/>} exact/>
         <Route path='/Bolumler/BilgisayarMuhendisligi' element={<BilgisayarMuhendisligi/>} exact/>
         <Route path='/Bolumler/EndustriMuhendisligi' element={<EndustriMuhendisligi/>} exact/>

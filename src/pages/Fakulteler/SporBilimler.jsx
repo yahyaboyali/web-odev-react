@@ -1,8 +1,7 @@
 import React from 'react'
-import { Col, Row, Table, Nav } from 'react-bootstrap'
+import { Col, Row, Table,Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-
-export default function Kadikoy() {
+export default function GuzelSanatlar() {
   return (
     <div>
       <Row>
@@ -11,7 +10,7 @@ export default function Kadikoy() {
             <thead>
               <tr>
                 <th>#</th>
-                <th>fakülteler</th>
+                <th>Bölümler</th>
               </tr>
             </thead>
             <tbody>
@@ -20,7 +19,7 @@ export default function Kadikoy() {
                   1
                 </td>
                 <td>
-                  <Nav.Link as={Link} to="/Fakulteler/SosyalBilimler">Sosyal Bilimler Fakültesi</Nav.Link>
+                  <Nav.Link as={Link} to="/Bolumler/SporYoneticiligi">Spor Yöneticiliği</Nav.Link>
                 </td>
               </tr>
               <tr>
@@ -28,7 +27,7 @@ export default function Kadikoy() {
                   2
                 </td>
                 <td>
-                  <Nav.Link as={Link} to="/Fakulteler/SporBilimler">Spor bilimleri Fakültesi</Nav.Link>
+                  <Nav.Link as={Link} to="/Bolumler/Antrenorluk">Antrenörlük</Nav.Link>
                 </td>
               </tr>
             </tbody>
