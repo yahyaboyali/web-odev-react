@@ -1,10 +1,10 @@
 import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Row, Nav, Navbar } from 'react-bootstrap'
 
 export default function AltNavi() {
     return (
         <div>
-            <Container>
+            <Row className="mt-4">
                 <Navbar bg="dark" variant="dark" expand="lg">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Ana sayfa</Nav.Link>
@@ -25,7 +25,7 @@ export default function AltNavi() {
                         <Nav.Link href="#home">Aday Öğrenci</Nav.Link>
                     </Nav>
                 </Navbar>
-            </Container>
+            </Row>
 
         </div>
     )

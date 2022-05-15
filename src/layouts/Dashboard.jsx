@@ -16,6 +16,7 @@ import GuzelSanatlar from '../pages/Fakulteler/GuzelSanatlar'
 import Veterinerlik from '../pages/Fakulteler/Veterinerlik'
 import Orman from '../pages/Fakulteler/Orman'
 import SporBilimleri from '../pages/Fakulteler/SporBilimleri'
+import SosyalBilimler from '../pages/Fakulteler/SosyalBilimler'
 import BilgisayarMuhendisligi from '../pages/Bolumler/Fakulteler/Muhendislik/BilgisayarMuhendisligi'
 import EndustriMuhendisligi from '../pages/Bolumler/Fakulteler/Muhendislik/EndustriMuhendisligi'
 import InsaatMuhendisligi from '../pages/Bolumler/Fakulteler/Muhendislik/InsaatMuhendisligi'
@@ -25,6 +26,8 @@ import BesinGidaHijyeniTeknolojisi from '../pages/Bolumler/Fakulteler/Veteriner/
 import OrmanMuhendisligi from '../pages/Bolumler/Orman/OrmanMuhendisligi'
 import OrmanEndustriMuhendisligi from '../pages/Bolumler/Orman/OrmanEndustriMuhendisligi'
 import PeyzajMimarligi from '../pages/Bolumler/Orman/PeyzajMimarligi'
+import Psikoloji from '../pages/Bolumler/Fakulteler/SosyalBilimler/Psikoloji'
+
 export default function Dasboard () {
   return (
     <div>
@@ -45,6 +48,7 @@ export default function Dasboard () {
         <Route path='/Fakulteler/Veterinerlik' element={<Veterinerlik/>} exact/>
         <Route path='/Fakulteler/Orman' element={<Orman/>} exact/>
         <Route path='/Fakulteler/SporBilimleri' element={<SporBilimleri/>} exact/>
+        <Route path='/Fakulteler/SosyalBilimler' element={<SosyalBilimler/>} exact/>
         <Route path='/Bolumler/BilgisayarMuhendisligi' element={<BilgisayarMuhendisligi/>} exact/>
         <Route path='/Bolumler/EndustriMuhendisligi' element={<EndustriMuhendisligi/>} exact/>
         <Route path='/Bolumler/InsaatMuhendisligi' element={<InsaatMuhendisligi/>} exact/>
@@ -54,6 +58,7 @@ export default function Dasboard () {
         <Route path='/Bolumler/OrmanMuhendisligi' element={<OrmanMuhendisligi/>} exact/>
         <Route path='/Bolumler/OrmanEndustriMuhendisligi' element={<OrmanEndustriMuhendisligi/>} exact/>
         <Route path='/Bolumler/PeyzajMimarligi' element={<PeyzajMimarligi/>} exact/>
+        <Route path='/Bolumler/Psikoloji' element={<Psikoloji/>} exact/>
       </Routes>
     </div>
   )
