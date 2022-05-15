@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import AltNavi from '../../../../layouts/AltNavi'
-import SlydeBilgisayarMuhendisligi from '../../../../layouts/SlydeBilgisayarMuhendisligi'
+import Slyde from '../../../../layouts/Slyde'
 
 export default function Psikoloji() {
   return (
@@ -9,7 +9,7 @@ export default function Psikoloji() {
       <Container>
         <Row container>
           <Col>
-            <SlydeBilgisayarMuhendisligi />
+            <Slyde />
           </Col>
         </Row>
         <Row>

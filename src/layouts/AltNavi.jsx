@@ -4,7 +4,7 @@ import { Row, Nav, Navbar } from 'react-bootstrap'
 export default function AltNavi() {
     return (
         <div>
-            <Row className="fixed-bottom">
+            <Row className="mt-4">
                 <Navbar bg="dark" variant="dark" expand="lg">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Ana sayfa</Nav.Link>
