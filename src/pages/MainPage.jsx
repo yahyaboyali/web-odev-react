@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import CardDuyuru from '../layouts/CardDuyuru'
 import CardLayout from '../layouts/CardLayout'
 import Slyde from '../layouts/Slyde'
 export default function login() {
@@ -12,7 +13,7 @@ export default function login() {
             <h2>Haberler</h2>
           </label>
           <Col >
-            <CardLayout />
+            <CardLayout/>
           </Col>
           <Col >
             <CardLayout />
@@ -26,13 +27,13 @@ export default function login() {
             <h2>Etkinlikler</h2>
           </label>
           <Col >
-            <CardLayout />
+            <CardDuyuru />
           </Col>
           <Col >
-            <CardLayout />
+            <CardDuyuru />
           </Col>
           <Col >
-            <CardLayout />
+            <CardDuyuru />
           </Col>
         </Row>
       </Container>
