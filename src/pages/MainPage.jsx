@@ -2,9 +2,10 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CardLayout from '../layouts/CardLayout'
 import Slyde from '../layouts/Slyde'
-export default function login() {
+
+export default function MainPage() {
   return (
-    <div>
+    <Container>
       <Slyde />
 
       <Container className='mt-5'>
@@ -37,6 +38,6 @@ export default function login() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </Container>
   )
 }
