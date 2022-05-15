@@ -3,18 +3,30 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 
 export default function AltNavi() {
     return (
-        <div className='col-md-12 feature-container'>
-            <Navbar bg="dark" variant="dark" expand="lg">
-                <Container >
-                    <Nav>
+        <div>
+            <Container>
+                <Navbar bg="dark" variant="dark" expand="lg">
+                    <Nav className="me-auto">
                         <Nav.Link href="#home">Ana sayfa</Nav.Link>
-                        <Nav.Link href="#home">Aksis</Nav.Link>
-                        <Nav.Link href="#features">Canvas</Nav.Link>
-                        <Nav.Link href="#pricing">Fakülteler</Nav.Link>
-                        <Nav.Link href="#pricing">Fakülteler</Nav.Link>
                     </Nav>
-                </Container>
-            </Navbar>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Uzakan eğitim sistemi</Nav.Link>
+                    </Nav>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Kütüphane</Nav.Link>
+                    </Nav>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Eğitim Merkezi</Nav.Link>
+                    </Nav>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Aksis</Nav.Link>
+                    </Nav>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Aday Öğrenci</Nav.Link>
+                    </Nav>
+                </Navbar>
+            </Container>
+
         </div>
     )
 }
