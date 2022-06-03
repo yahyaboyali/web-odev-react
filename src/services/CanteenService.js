@@ -1,10 +1,10 @@
 import axios from "axios";
 
 export default class CanteenService{
-    allNews(){
+    getAll(){
         return axios.get("http://localhost:3000/canteen")
     }
-    getOneNews(id){
+    getOneItem(id){
         return axios.get("http://localhost:3000/canteen/",{id:id})
     }
 
