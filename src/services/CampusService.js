@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default class CampusService{
-    allNews(){
+    allCampuses(){
         return axios.get("http://localhost:3000/campuses")
     }
     getOneNews(id){

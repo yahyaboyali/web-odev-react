@@ -1,7 +1,15 @@
-import React from 'react'
-import { Row, Col,Table,Nav } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
+import React, { useState,useEffect } from 'react'
+import { Row, Col,Table } from 'react-bootstrap'
+import CampusService from '../services/CampusService'
 export default function Yerleskeler() {
+    const [campuses, setcampuses] = useState([]);
+    useEffect(() => {
+        let campusService = new CampusService();
+        campusService.allCampuses().then(
+            result=>setcampuses(result.data.data)
+        )
+    }, [])
+    
     return (
         <div>
             <Row>
@@ -14,18 +22,14 @@ export default function Yerleskeler() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><Nav.Link as={Link} to="/Yerleskeler/Besiktas">Beşiktaş</Nav.Link></td>
-                                <td><a href='https://goo.gl/maps/rvJzyV97DJ6UVxRW6'  target="_blank" rel="noreferrer">konum</a></td>
-                            </tr>
-                            <tr>
-                                <td><Nav.Link as={Link} to="/Yerleskeler/Kadikoy">Kadıköy</Nav.Link></td>
-                                <td><a href='https://goo.gl/maps/AftEatw3W66jnCaUA'  target="_blank" rel="noreferrer">konum</a></td>
-                            </tr>
-                            <tr>
-                                <td><Nav.Link as={Link} to="/Yerleskeler/Sariyer">Sarıyer</Nav.Link></td>
-                                <td><a href='https://goo.gl/maps/CnZbMueB6CRaEy8c8'  target="_blank" rel="noreferrer">konum</a></td>
-                            </tr>
+                            {
+                                campuses.map(campuses=>(
+                                    <tr key={campuses.id}>
+                                        <td>{campuses.name}</td>
+                                        <td>{campuses.location}</td>
+                                    </tr>
+                                ))
+                            }
                         </tbody>
                     </Table>
                 </Col>
