@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export default class HaberServis{
-    allNews(){
+    allActivities(){
         return axios.get("http://localhost:3000/allNews")
     }
-    getOneNews(id){
-        return axios.get("http://localhost:3000/allNews/",{id:id})
+    getOneActivities(id){
+        return axios.get("http://localhost:3000/allActivities/",{id:id})
     }
     
 }
