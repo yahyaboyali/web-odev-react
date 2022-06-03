@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CardLayout from '../layouts/CardLayout'
 import Slyde from '../layouts/Slyde'
-
+import HaberServis from '../services/HaberServis'
 export default function MainPage() {
+  const [news, setnews] = useState([]);
+  useEffect(() => {
+    let hs = new HaberServis();
+    hs.allNews().then(
+      result => setnews(result.data.data)
+    )
+  }, [])
   return (
     <Container>
       <Slyde />
@@ -16,12 +23,11 @@ export default function MainPage() {
           <Col>
             <CardLayout title="Haber1" description="Haber açıklaması1" linkHref="#haber1" linkText="Haber detayı1" />
           </Col>
-          <Col >
-            <CardLayout title="Haber2" description="Haber açıklaması2" linkHref="#haber2" linkText="Haber detayı2" />
-          </Col>
-          <Col >
-            <CardLayout title="Haber3" description="Haber açıklaması3" linkHref="#haber3" linkText="Haber detayı3" />
-          </Col>
+          {
+            news.map(news =>(
+              <CardLayout title={news.header} description={news.short} linkText={news.body}/>
+            ))
+          }
         </Row>
         <Row className="justify-content-md-center">
           <label className='bg-light'>
