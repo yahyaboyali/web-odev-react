@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import { Row, Col, Table, Card } from 'react-bootstrap'
+import CanteenService from '../services/CanteenService'
 
 export default function Kantin() {
+    const [products, setproducts] = useState([])
+    useEffect(() => {
+      let kantinservis = new CanteenService();
+        kantinservis.getAll().then(
+            result=>setproducts(result.data.data)
+        )
+    }, [])
+    
     return (
         <div>
             <Row>
@@ -25,24 +34,15 @@ export default function Kantin() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>çay ver</td>
-                                <td>200 ml çay</td>
-                                <td>1 TL</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>çay verir misin?</td>
-                                <td>200 ml çay</td>
-                                <td>0.75 TL</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Halil bey müsaitseniz çay rica edebilir miyim? </td>
-                                <td>200 ml çay</td>
-                                <td>0.25 TL</td>
-                            </tr>
+                        {
+                            products.map(products => (
+                                <tr key={products.id}>
+                                    <td>{products.brand}</td>
+                                    <td>{products.name}</td>
+                                    <td>{products.price}</td>
+                                </tr>
+                            ))
+                        }
                         </tbody>
                     </Table>
                 </Col>
