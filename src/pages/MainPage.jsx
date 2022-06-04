@@ -1,22 +1,34 @@
-import React, { useState, useEffect } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import CardLayout from '../layouts/CardLayout'
-import Slyde from '../layouts/Slyde'
-import ActivitiesService from '../services/ActivitiesService'
-import HaberServis from '../services/HaberServis'
+import React, { useState, useEffect } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import CardLayout from '../layouts/CardLayout';
+import Slyde from '../layouts/Slyde';
+import ActivitiesService from '../services/ActivitiesService';
+import HaberServis from '../services/HaberServis';
+
 export default function MainPage() {
   const [news, setnews] = useState([]);
+  const [activities, setactivities] = useState([]);
+
   useEffect(() => {
     let hs = new HaberServis();
     hs.allNews().then(
-      result => setnews(result.data.data)
-    )
+      result => {
+        console.log('allNews', result.data);
+        setnews(result.data.data)
+      }
+    );
+
+    let activitieService = new ActivitiesService();
+    activitieService.allActivities()
+      .then(
+        result => {
+          console.log('allActivities', result.data);
+          setactivities(result.data.data);
+        }
+      )
+      .catch(error => console.log(error));
   }, []);
-  const [activities, setactivities] = useState([]);
-  let activitieService = new ActivitiesService();
-  activitieService.allActivities().then(
-    result => setactivities(result.data.data)
-  )
+
   return (
     <Container>
       <Slyde />
@@ -26,15 +38,11 @@ export default function MainPage() {
           <label className='bg-light'>
             <h2>Haberler</h2>
           </label>
-          <Col>
-            <CardLayout title="Haber1" description="Haber açıklaması1" linkHref="#haber1" linkText="Haber detayı1" />
-          </Col>
           {
-            news.map(news => (
-              <Col>
-                <CardLayout title={news.header} description={news.short} linkText={news.body} />
+            news.map((each, index) => (
+              <Col key={parseInt(Math.random() * 1000) + index}>
+                <CardLayout title={each.header} description={each.short} linkText="Haber Detayı" linkHref="#haber1" />
               </Col>
-
             ))
           }
         </Row>
@@ -43,9 +51,9 @@ export default function MainPage() {
             <h2>Etkinlikler</h2>
           </label>
           {
-            news.map(aktivities => (
-              <Col>
-                <CardLayout title={activities.header} description={activities.short} linkText={activities.body} />
+            activities.map((each, index) => (
+              <Col key={parseInt(Math.random() * 1000) + index}>
+                <CardLayout title={each.header} description={each.short} linkText="Etkinlik Detayı" linkHref="#etkinlik1" />
               </Col>
             ))
           }
