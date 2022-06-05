@@ -3,7 +3,9 @@ import { Row, Col, Table, Card } from 'react-bootstrap'
 import CanteenService from '../services/CanteenService'
 
 export default function Kantin() {
-    const [products, setproducts] = useState([])
+    const [products, setproducts] = useState([]);
+    let i = 1;
+
     useEffect(() => {
       let kantinservis = new CanteenService();
         kantinservis.getAll().then(
@@ -37,9 +39,10 @@ export default function Kantin() {
                         {
                             products.map(products => (
                                 <tr key={products.id}>
+                                    <td>{ i++ }</td>
                                     <td>{products.brand}</td>
                                     <td>{products.name}</td>
-                                    <td>{products.price}</td>
+                                    <td>{'₺' + products.price}</td>
                                 </tr>
                             ))
                         }

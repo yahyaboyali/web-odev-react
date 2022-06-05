@@ -2,10 +2,10 @@ import axios from "axios";
 
 export default class ActivitiesService{
     allActivities(){
-        return axios.get("http://localhost:3000/allActivities")
+        return axios.get("https://agalar-university.herokuapp.com/allActivities")
     }
     getOneActivities(id){
-        return axios.get("http://localhost:3000/allActivities/",{id:id})
+        return axios.get("https://agalar-university.herokuapp.com/allActivities/",{id:id})
     }
     
 }
