@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Col, Row, Table, Nav } from 'react-bootstrap'
-import { Link, useParams } from 'react-router-dom';
-import CardLayout from '../../layouts/CardLayout';
+import { Col, Row, Table } from 'react-bootstrap'
+import { useParams } from 'react-router-dom';
 import FacultiesService from '../../services/FacultiesService';
 
 export default function Yerleske() {
@@ -20,14 +19,26 @@ export default function Yerleske() {
 
     return (
         <div>
-            <h1>Yerleşke</h1>
-            {
-                Fakulteler.map(Fakulteler => (
-                    <Col style={{ marginTop: '0.5rem' }} key={Fakulteler.id}>
-                        <CardLayout title={Fakulteler.name} linkHref="#haber1" />
-                    </Col>
-                ))
-            }
+            <Row>
+                <Col>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>isim</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                Fakulteler.map(Fakulteler => (
+                                    <tr key={Fakulteler.id}>
+                                        <td>{Fakulteler.name}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </Table>
+                </Col>
+            </Row>
         </div>
     )
 }

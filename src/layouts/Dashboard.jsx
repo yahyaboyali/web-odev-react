@@ -10,10 +10,6 @@ import IdariBirimler from '../pages/IdariBirimler'
 import Kantin from '../pages/Kantin'
 import Yerleskeler from '../pages/Yerleskeler'
 import Takvim from '../pages/Takvim'
-
-import Besiktas from '../pages/Yerleskeler/Besiktas'
-import Kadikoy from '../pages/Yerleskeler/Kadikoy'
-import Sariyer from '../pages/Yerleskeler/Sariyer'
 import Muhendislik from '../pages/Fakulteler/Muhendislik'
 import Tip from '../pages/Fakulteler/Tip'
 import Veterinerlik from '../pages/Fakulteler/Veterinerlik'
@@ -44,11 +40,7 @@ export default function Dasboard () {
         <Route path='/Kantin' element={<Kantin/>} exact/>
         <Route path='/Yerleskeler' element={<Yerleskeler/>} exact/>
         <Route path='/Takvim' element={<Takvim/>} exact/>
-
-        <Route path='/Yerleskeler/Avcılar Yerleşkesi' element={<Besiktas/>} exact/>
         <Route path='/Yerleskeler/:id' element={<Yerleske/>} exact/>
-        <Route path='/Yerleskeler/Kadikoy' element={<Kadikoy/>} exact/>
-        <Route path='/Yerleskeler/Sariyer' element={<Sariyer/>} exact/>
         <Route path='/Fakulteler/Muhendislik' element={<Muhendislik/>} exact/>
         <Route path='/Fakulteler/Tip' element={<Tip/>} exact/>
         <Route path='/Fakulteler/SporBilimler' element={<SporBilimler/>} exact/>
