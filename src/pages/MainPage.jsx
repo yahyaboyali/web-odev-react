@@ -51,9 +51,6 @@ export default function MainPage() {
             <h2>Etkinlikler</h2>
           </label>
           {
-            activities.map((each, index) => (
-              <Col key={parseInt(Math.random() * 1000) + index}>
-                <CardLayout title={each.header} description={each.short} linkText="Etkinlik Detayı" linkHref="#etkinlik1" />
               </Col>
             ))
           }
