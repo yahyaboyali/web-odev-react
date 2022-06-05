@@ -40,7 +40,7 @@ export default function MainPage() {
           </label>
           {
             news.map((each, index) => (
-              <Col key={parseInt(Math.random() * 1000) + index}>
+              <Col style={{ marginTop: '0.5rem' }} key={parseInt(Math.random() * 1000) + index}>
                 <CardLayout title={each.header} description={each.short} linkText="Haber Detayı" linkHref="#haber1" />
               </Col>
             ))
@@ -52,7 +52,7 @@ export default function MainPage() {
           </label>
           {
             activities.map((each, index) => (
-              <Col key={parseInt(Math.random() * 1000) + index}>
+              <Col style={{ marginTop: '0.5rem' }} key={parseInt(Math.random() * 1000) + index}>
                 <CardLayout title={each.header} description={each.short} linkText="Haber Detayı" linkHref="#haber1" />
               </Col>
             ))
