@@ -53,7 +53,7 @@ export default function MainPage() {
           {
             activities.map((each, index) => (
               <Col style={{ marginTop: '0.5rem' }} key={parseInt(Math.random() * 1000) + index}>
-                <CardLayout title={each.header} description={each.short} linkText="Haber Detayı" linkHref="#haber1" />
+                <CardLayout title={each.header} description={each.short} linkText="etkinlik Detayı" linkHref="#haber1" />
               </Col>
             ))
           }

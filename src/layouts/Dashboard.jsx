@@ -30,6 +30,7 @@ import OrmanEndustriMuhendisligi from '../pages/Bolumler/Orman/OrmanEndustriMuhe
 import PeyzajMimarligi from '../pages/Bolumler/Orman/PeyzajMimarligi'
 import Psikoloji from '../pages/Bolumler/Fakulteler/SosyalBilimler/Psikoloji'
 import SporBilimler from '../pages/Fakulteler/SporBilimler'
+import Yerleske from '../pages/Yerleskeler/Yerleske'
 export default function Dasboard () {
   return (
     <div>
@@ -44,7 +45,8 @@ export default function Dasboard () {
         <Route path='/Yerleskeler' element={<Yerleskeler/>} exact/>
         <Route path='/Takvim' element={<Takvim/>} exact/>
 
-        <Route path='/Yerleskeler/Besiktas' element={<Besiktas/>} exact/>
+        <Route path='/Yerleskeler/Avcılar Yerleşkesi' element={<Besiktas/>} exact/>
+        <Route path='/Yerleskeler/:id' element={<Yerleske/>} exact/>
         <Route path='/Yerleskeler/Kadikoy' element={<Kadikoy/>} exact/>
         <Route path='/Yerleskeler/Sariyer' element={<Sariyer/>} exact/>
         <Route path='/Fakulteler/Muhendislik' element={<Muhendislik/>} exact/>
