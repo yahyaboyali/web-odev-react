@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { Row, Col,Table } from 'react-bootstrap'
 import CampusService from '../services/CampusService'
+import { Link } from 'react-router-dom';
 export default function Yerleskeler() {
     const [campuses, setcampuses] = useState([]);
     useEffect(() => {
@@ -25,7 +26,7 @@ export default function Yerleskeler() {
                             {
                                 campuses.map(campuses=>(
                                     <tr key={campuses.id}>
-                                        <td>{campuses.name}</td>
+                                        <td><Link to={`/campuses/${campuses.id}`}>{campuses.name}</Link></td>
                                         <td>{campuses.location}</td>
                                     </tr>
                                 ))
