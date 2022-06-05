@@ -41,10 +41,9 @@ export default function Takvim() {
                     <Table striped bordered hover>
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>isim</th>
-                                <th>Açıklama </th>
-                                <th>tarih</th>
+                                <th>açıklama</th>
+                                <th>tarih </th>
                             </tr>
                         </thead>
                         <tbody>
