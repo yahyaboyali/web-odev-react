@@ -9,20 +9,15 @@ export default function Misyon() {
             </Card>
 
             <Card body className="m-3">
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
-                MİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYONMİSYON
-                <br/>
+                <b>Misyon</b>
+                <br />
+                Agalar University; geçmişten gelen birikimi ile sağlık, mühendislik, doğa ve sosyal bilimler alanlarında tercih edilen,
+                etik değerlere bağlı, kaliteli hizmetler sunan, sosyal ve akademik donanımlı bireyler yetiştiren, bilgi birikiminden
+                istifade edilen, “en iyi olmak için” sloganıyla hareket eden köklü bir araştırma üniversitesidir.
+                <br /><br />
+                <b>Vizyon</b>
+                <br />
+                Dünyada ve ülkemizde kabul edilen öncü bir araştırma üniversitesi olmak.
             </Card>
         </Container>
     )
