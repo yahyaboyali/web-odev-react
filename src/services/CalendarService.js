@@ -1,10 +1,10 @@
 import axios from "axios";
 
 export default class CalendarService{
-    allNews(){
+    allCalendar(){
         return axios.get("https://agalar-university.herokuapp.com/calendar")
     }
-    getOneNews(id){
+    getOneCalendar(id){
         return axios.get("https://agalar-university.herokuapp.com/calendar/",{id:id})
     }
     
