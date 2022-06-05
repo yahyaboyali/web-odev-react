@@ -1,30 +1,35 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
+import React, { useState, useEffect } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import SlideService from '../services/SlideService';
+
 export default function Slyde() {
+  const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+    const service = new SlideService();
+    service.allSlides().then(
+      result => {
+        console.log('allSlides', result.data);
+        setSlides(result.data.data)
+      }
+    );
+  }, []);
+
   return (
-    <div style={{  marginTop: '1rem' }}>
-    <Carousel>
-<Carousel.Item interval={1000}>
-  <img
-    className="resim"
-    src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=First slide&bg=282c34"
-    alt="First slide"
-  />
-</Carousel.Item>
-<Carousel.Item interval={500}>
-  <img
-    className="resim"
-    src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=Second slide&bg=282c34"
-    alt="Second slide"
-  />
-</Carousel.Item>
-<Carousel.Item>
-  <img
-    className="resim"
-    src="/img/senlik.PNG?f=Lxq3TCXBNEKy170eHvxhFg?text=Third slide&bg=282c34"
-    alt="Third slide"
-  />
-</Carousel.Item>
-</Carousel></div>
+    <div style={{ marginTop: '1rem' }}>
+      <Carousel>
+        {
+          slides.map((each, index) => (
+            <Carousel.Item key={parseInt(Math.random() * 1000) + index} interval={1000}>
+              <img
+                className="resim"
+                src={each.url}
+                alt="First slide"
+              />
+            </Carousel.Item>
+          ))
+        }
+      </Carousel>
+    </div>
   )
 }
