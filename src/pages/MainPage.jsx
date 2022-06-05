@@ -43,7 +43,7 @@ export default function MainPage() {
             <h2>Etkinlikler</h2>
           </label>
           {
-            news.map(aktivities => (
+            news.map(activities => (
               <Col>
                 <CardLayout title={activities.header} description={activities.short} linkText={activities.body} />
               </Col>
