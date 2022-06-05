@@ -26,7 +26,7 @@ export default function Yerleskeler() {
                             {
                                 campuses.map(campuses=>(
                                     <tr key={campuses.id}>
-                                        <td><Link to={`/campuses/${campuses.id}`}>{campuses.name}</Link></td>
+                                        <td><Link to={`/yerleskeler/${campuses.id}`}>{campuses.name}</Link></td>
                                         <td>{campuses.location}</td>
                                     </tr>
                                 ))
