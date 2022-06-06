@@ -5,4 +5,7 @@ export default class DepartmenService{
         return axios.get("https://agalar-university.herokuapp.com/department/"+ fid)
     }
     
+    getDepartmentSlides(did){
+        return axios.get("https://agalar-university.herokuapp.com/department-slide/"+ did)
+    }
 }
