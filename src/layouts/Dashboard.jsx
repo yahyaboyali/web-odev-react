@@ -10,6 +10,8 @@ import Yerleskeler from '../pages/Yerleskeler'
 import Takvim from '../pages/Takvim'
 import Yerleske from '../pages/Yerleskeler/Yerleske'
 import Department from '../pages/Bolumler/Department'
+import DepartmentSlides from '../pages/Bolumler/DepartmentSlide'
+
 export default function Dasboard () {
   return (
     <div>
@@ -23,6 +25,7 @@ export default function Dasboard () {
         <Route path='/Takvim' element={<Takvim/>} exact/>
         <Route path='/Yerleskeler/:id' element={<Yerleske/>} exact/>
         <Route path='/Department/:id' element={<Department/>} exact/>
+        <Route path='/Department-Slides/:id' element={<DepartmentSlides/>} exact/>
       </Routes>
     </div>
   )

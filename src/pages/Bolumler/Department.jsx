@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Row, Table } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
-import DepartmenService from '../../services/DepartmentService';
+import { Link, useParams } from 'react-router-dom';
+import DepartmentService from '../../services/DepartmentService';
 
 export default function Department() {
     let { id } = useParams();
-    let i=0;
     const [department, setdepartment] = useState([]);
     console.log(id);
     useEffect(() => {
-        let departmentService = new DepartmenService();
+        let departmentService = new DepartmentService();
         departmentService.getDepartmentByFacultyId(id)
             .then(result => {
                 console.log('departmentservice', result.data);
@@ -31,10 +30,12 @@ export default function Department() {
                         </thead>
                         <tbody>
                             {
-                                department.map(department => (
-                                    <tr key={department.id}>
-                                        <td>{++i}</td>
-                                        <td>{department.name}</td>
+                                department.map((dep, index) => (
+                                    <tr key={dep.id}>
+                                        <td>{index + 1}</td>
+                                        <td>
+                                            <Link to={`/Department-Slides/${dep.id}`}>{dep.name}</Link>
+                                        </td>
                                     </tr>
                                 ))
                             }
