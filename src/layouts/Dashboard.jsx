@@ -27,6 +27,7 @@ import PeyzajMimarligi from '../pages/Bolumler/Orman/PeyzajMimarligi'
 import Psikoloji from '../pages/Bolumler/Fakulteler/SosyalBilimler/Psikoloji'
 import SporBilimler from '../pages/Fakulteler/SporBilimler'
 import Yerleske from '../pages/Yerleskeler/Yerleske'
+import Department from '../pages/Bolumler/Department'
 export default function Dasboard () {
   return (
     <div>
@@ -41,6 +42,7 @@ export default function Dasboard () {
         <Route path='/Yerleskeler' element={<Yerleskeler/>} exact/>
         <Route path='/Takvim' element={<Takvim/>} exact/>
         <Route path='/Yerleskeler/:id' element={<Yerleske/>} exact/>
+        <Route path='/Department/:id' element={<Department/>} exact/>
         <Route path='/Fakulteler/Muhendislik' element={<Muhendislik/>} exact/>
         <Route path='/Fakulteler/Tip' element={<Tip/>} exact/>
         <Route path='/Fakulteler/SporBilimler' element={<SporBilimler/>} exact/>

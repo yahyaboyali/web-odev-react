@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Col, Row, Table } from 'react-bootstrap'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import FacultiesService from '../../services/FacultiesService';
 
 export default function Yerleske() {
     let { id } = useParams();
+    let i =0;
     const [Fakulteler, setFakulteler] = useState([]);
 
     useEffect(() => {
@@ -24,6 +25,7 @@ export default function Yerleske() {
                     <Table striped bordered hover>
                         <thead>
                             <tr>
+                                <th>#</th>
                                 <th>isim</th>
                             </tr>
                         </thead>
@@ -31,7 +33,8 @@ export default function Yerleske() {
                             {
                                 Fakulteler.map(Fakulteler => (
                                     <tr key={Fakulteler.id}>
-                                        <td>{Fakulteler.name}</td>
+                                        <td>{++i}</td>
+                                        <td><Link to={`/Department/${Fakulteler.id}`}>{Fakulteler.name}</Link></td>
                                     </tr>
                                 ))
                             }
